@@ -1,0 +1,42 @@
+<% var startY = 0%>
+<% for(var i = 0; i < rects.length; i++) { %>
+
+    <% var rectWidth = rects[i].width %>
+    <% var rectHeight = rects[i].height %>
+    <% 
+        if(i != 0) {
+        startY = startY + rects[i-1].height + 10
+        } 
+    %>
+    <% var rectColor = rects[i].color %>
+    
+    <script>
+        console.log ("-----------------------------------------");
+        var canvas = document.querySelector("svg");
+
+        var getRectWidth = "<%= rectWidth %>";
+        var getRectHeight = "<%= rectHeight %>";
+        var getRectColor = "<%= rectColor %>";
+        var getRectStartY = "<%= startY %>";
+
+        var rectY = getRectStartY;
+        var rectX = 50;
+
+        console.log(getRectWidth)
+        console.log(getRectHeight)
+        console.log(getRectColor)
+        console.log("RectY " + rectY)
+
+
+        var currRect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+        currRect.setAttributeNS(null,'x', rectX);
+        currRect.setAttributeNS(null,'y', rectY);
+        currRect.setAttributeNS(null,'width', getRectWidth);
+        currRect.setAttributeNS(null,'height', getRectHeight);
+        currRect.setAttributeNS(null,'fill', getRectColor);
+        currRect.setAttributeNS(null,'stroke', 'black');
+
+        canvas.appendChild(currRect);
+    </script>  
+    
+<% } %>

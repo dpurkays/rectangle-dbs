@@ -1,0 +1,39 @@
+<!-- include header -->
+<%- include('partials/_header') %>
+
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex-justify-between">
+            <div class="filter">
+                <a href="/"><i class="fas fa-angle-double-left"></i> All Rectangles</a>
+            </div>
+            <div class="form-title text-center">
+            </div>
+    </div>
+
+<div class="full-details">
+    <form action="/" method="POST">
+        <table class="table">
+                <thead class="thead-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Email</th>
+                            <th>Width</th>
+                            <th>Length</th>
+                            <th>Title</th>
+                            <th>Color</th>
+                            <th>Description</th>
+                            <th>City</th>
+                        </tr>
+                </thead>
+                <tbody>
+                    <%- include('partials/_fulldetail') %>
+                </tbody>
+        </table>
+</form>
+</div>
+</main>
+<!-- /main section -->
+
+<!-- include footer -->
+<%- include('partials/_footer') %>

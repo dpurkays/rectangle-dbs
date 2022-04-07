@@ -1,0 +1,24 @@
+<%for(var i = 0; i < rects.length; i++) {%>
+<tr>
+
+    <td><%= i + 1%></td>
+    <td><%= rects[i].title %></td>
+    <td><%= rects[i].width %></td>
+    <td><%= rects[i].height %></td>
+    <td><%= rects[i].color %></td>
+    <td>
+        <a href="/update-rect?id=<%= rects[i]._id%>" class="btn border-shadow update">
+            <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+        </a>
+        
+        <a class="btn border-shadow delete" data-id=<%= rects[i]._id%>>
+            <span class="text-gradient"><i class="fas fa-times"></i></span>
+        </a>
+        
+        <a href="/more-rect?id=<%= rects[i]._id%>" class="btn border-shadow more">
+            <span class="text-gradient"><i class="fas fa-info-circle"></i></span>
+        </a>
+
+    </td>
+</tr>
+<%}%>

@@ -1,0 +1,38 @@
+<!-- include header -->
+<%- include('partials/_header') %>
+
+<!-- main section -->
+<main id="site-main">
+	<div class="container">
+			<div class="box-nav d-flex-justify-between">
+					<a href="/add-rect" class="border-shadow">
+							<span class="text-gradient"><i class="fas fa-plus-circle"></i> New Rectangle</span>
+					</a>
+			</div>
+
+			<!-- form handling -->
+					<form action="/" method="POST">
+							<table class="table">
+									<thead class="thead-dark">
+											<tr>
+												<th>Number</th>
+												<th>Title</th>
+												<th>Width</th>
+												<th>Height</th>
+												<th>Color</th>
+												<th>Action</th>
+											</tr>
+									</thead>
+									<tbody>
+										<%- include('partials/_show') %>
+									</tbody>
+							</table>
+					</form>
+	</div>
+	<!-- canvas for drawing rectangles -->
+	<svg id="myCanvas" height="2000" width="2000"></svg>
+	<%- include('partials/_draw') %>
+</main>
+
+<!-- include footer -->
+<%- include('partials/_footer') %>

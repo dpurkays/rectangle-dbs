@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama&family=Noto+Sans+JP&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.container{
+    max-width: 1000px;
+    max-height: 1000px;
+    margin: auto;
+}
+
+.nav-brand{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.border-shadow{
+    border: 1px solid #edf2f4;
+    box-shadow: 1px 3px 10px #e9ecef;
+}
+
+.text-dark{
+    color: #2b2d42;
+}
+
+.inline{
+    display: inline-block;
+}
+
+.title{
+    color: #ffffff;
+}
+
+.text-light{
+    color: #adb5bd;
+}
+
+.text-gradient{
+    background: #06acd6;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#header nav{
+    background-color: #06acd6;
+    padding: 1em 0;
+    width: 100%;
+}
+
+#site-main{
+    margin-top: 6em;
+    font-family: 'Gerorama', sans-serif;
+}
+
+#site-main .container .box-nav > a{
+    font-size: 1em;
+    padding: .5em .5em;
+}
+
+#site-main .container form{
+    margin: 1em 0;
+}
+
+table{
+    border-spacing: 0px;
+    width: 100%;
+}
+
+.table td, .table th{
+    padding: .75em;
+    text-align: center;
+}
+
+.table td > a.btn{
+    padding: .3em 1em;
+    font-size: 1.1em;
+    margin: 0 .2em;
+}
+
+.table .thead-dark th{
+    color: #fff;
+    background-color: #2b2d42;
+    border-color: #1d0681;
+}
+
+/*  add user & update user template */
+.form-title{
+    margin-top: 2em;
+}
+
+.form-title > h2{
+    padding: .5em 0;
+}
+
+.new_rect{
+    max-width: 786px;
+    margin: auto;
+}
+
+#update_rect .form-group input[type="text"],
+#add_rect .form-group input[type="text"]{
+    width: 100%;
+    padding: .6em 1em;
+    margin: .5em 0;
+    font-family: 'Georama', sans-serif;
+    font-size: 1em;
+}
+
+#update_rect .form-group .btn,
+#add_rect .form-group .btn{
+    width: 100%;
+    padding: .9em;
+    background-color:#06acd6; 
+    font-family: 'Noto Sans JP', sans-serif;
+    cursor: pointer;
+}
+
+/* hover on btn */
+#update_rect .form-group .btn:hover,
+#add_rect .form-group .btn:hover{
+    background-color: #2b2d42;
+    color: #edf2f4;
+}
+
